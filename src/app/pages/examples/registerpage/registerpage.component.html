@@ -1,0 +1,332 @@
+<app-headers> </app-headers>
+<div class="wrapper">
+
+  <div class="page-header">
+    <div class="page-header-image"></div>
+    <div class="content">
+      <div >
+
+
+        <h2 class="card-title"  class="form-check ">Ouvrir mon compte de paiement</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 offset-lg-0 offset-md-3">
+            <div class="square square-7" id="square7"></div>
+            <div class="square square-8" id="square8"></div>
+            <div class="card card-register">
+
+              <div class="card-body">
+                <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
+                  <div
+                    class="input-group"
+                    [ngClass]="{ 'input-group-focus': focus === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-single-02"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Nom"
+                      type="text"
+                      name = "nom"
+                      (focus)="focus = true"
+                      (blur)="focus = false"
+                      ngModel
+                    />
+                  </div>
+
+                  <div
+                          class="input-group"
+                          [ngClass]="{ 'input-group-focus': focus1 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-single-02"> </i>
+                      </div>
+                    </div>
+                    <input
+                            class="form-control"
+                            placeholder="Prénom"
+                            type="text"
+                            name = "prenom"
+                            (focus)="focus1 = true"
+                            (blur)="focus1 = false"
+                            ngModel
+                    />
+                  </div>
+                  <div
+                          class="input-group"
+                          [ngClass]="{ 'input-group-focus': focus2 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-time-alarm"> </i>
+                      </div>
+                    </div>
+                    <input
+                            class="form-control"
+                            placeholder="Date de naissance"
+                            type="date"
+                            name = "dateNaissance"
+                            (focus)="focus2 = true"
+                            (blur)="focus2 = false"
+                            ngModel
+                    />
+                  </div>
+                  <div
+                          class="input-group"
+                          [ngClass]="{ 'input-group-focus': focus3 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-bank"> </i>
+                      </div>
+                    </div>
+                    <input
+                            class="form-control"
+                            placeholder="Lieu de naissance"
+                            type="text"
+                            name = "lieuNaissance"
+                            (focus)="focus3 = true"
+                            (blur)="focus3 = false"
+                            ngModel
+                    />
+                  </div>
+                  <div
+                          class="input-group"
+                          [ngClass]="{ 'input-group-focus': focus4 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-map-big"> </i>
+                      </div>
+                    </div>
+                    <input
+                            class="form-control"
+                            placeholder="Adresse domicile"
+                            type="text"
+                            name = "adresse"
+                            (focus)="focus4 = true"
+                            (blur)="focus4 = false"
+                            ngModel
+                    />
+                  </div>
+
+                  <div
+                          class="input-group"
+                          [ngClass]="{ 'input-group-focus': focus5 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-headphones"> </i>
+                      </div>
+                    </div>
+                    <input
+                            class="form-control"
+                            placeholder="Numéro GSM"
+                            type="entier"
+                            name = "tel"
+                            (focus)="focus5 = true"
+                            (blur)="focus5 = false"
+                            ngModel
+                    />
+                  </div>
+                  <div
+                    class="input-group"
+                    [ngClass]="{ 'input-group-focus': focus6 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-email-85"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Email"
+                      type="email"
+                      name = "email"
+                      (focus)="focus6 = true"
+                      (blur)="focus6 = false"
+                      ngModel
+                    />
+                  </div>
+
+                  <div
+                          class="input-group"
+                          [ngClass]="{ 'input-group-focus': focus7 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-badge"> </i>
+                      </div>
+                    </div>
+                    <input
+                            class="form-control"
+                            placeholder="Login"
+                            type="text"
+                            name = "login"
+                            (focus)="focus7 = true"
+                            (blur)="focus7 = false"
+                            ngModel
+                    />
+                  </div>
+
+                  <div
+                    class="input-group"
+                    [ngClass]="{ 'input-group-focus': focus8 === true }"
+                  >
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-lock-circle"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Password"
+                      type="password"
+                      name = "mdp"
+                      (focus)="focus8 = true"
+                      (blur)="focus8 = false"
+                      ngModel
+                    />
+                  </div>
+                  <div class="form-check text-left">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" />
+
+                      <span class="form-check-sign"> </span> I agree to the
+                      <a href=""> terms and conditions </a> .
+                    </label>
+                  </div>
+
+              <div class="card-footer">
+                <button type="reset" class="btn btn-light btn-lg">Annuler</button>
+                <button type="submit" (click)="myModal1.show()" class="btn btn-success btn-lg ms-2">Confirmer</button>
+              </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="register-bg"></div>
+        <div class="square square-1" id="square1"></div>
+        <div class="square square-2" id="square2"></div>
+        <div class="square square-3" id="square3"></div>
+        <div class="square square-4" id="square4"></div>
+        <div class="square square-5" id="square5"></div>
+        <div class="square square-6" id="square6"></div>
+      </div>
+    </div>
+  </div>
+
+  <div
+          aria-hidden="true"
+          aria-labelledby="myModalLabel"
+          bsModal
+          class="modal fade modal-mini modal-danger modal-mini"
+          #myModal1="bs-modal"
+          id="myModal1"
+          role="dialog"
+          tabindex="-1"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-footer">
+          <button class="btn btn-link btn-neutral" type="button">Back</button>
+          <button
+                  class="btn btn-link btn-neutral"
+                  data-dismiss="modal"
+                  type="button"
+                  (click)="myModal1.hide()"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><h1 class="title">BNA Cash</h1></div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/home']"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/register']"> Register </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://creative-tim.com/contact-us?ref=blkdsa-footer">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://creative-tim.com/about-us?ref=blkdsa-footer">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://creative-tim.com/blog?ref=blkdsa-footer">
+                Blog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://opensource.org/licenses/MIT">
+                License
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="title">Follow us:</h3>
+          <div class="btn-wrapper profile">
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="https://twitter.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="https://www.facebook.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple"
+              href="https://dribbble.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

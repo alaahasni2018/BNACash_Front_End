@@ -1,0 +1,77 @@
+<p>test works!</p>
+<div *ngIf="isConnected" class="container">
+    <h3 class="title mb-4">Nos Packs </h3>
+    <div class="row">
+        <div class="col-sm-5 col-5"  class="col-md-3" class="col-md-4">
+            <small class="d-block text-uppercase font-weight-bold mb-4">
+            </small>
+            <img
+                    alt="Rounded image"
+                    class="img-fluid rounded shadow"
+                    src="assets/img/ryan.jpg"
+                    style="width: 150px;"
+            />
+
+        </div>
+
+        <div class="col-sm-5 col-5"  class="col-md-3" class="col-md-4">
+            <small class="d-block text-uppercase font-weight-bold mb-4">
+            </small>
+            <img
+                    alt="Rounded image"
+                    class="img-fluid rounded shadow"
+                    src="assets/img/ryan.jpg"
+                    style="width: 150px;"
+            />
+
+        </div>
+        <div class="col-sm-5 col-5"  class="col-md-3" class="col-md-4">
+            <small class="d-block text-uppercase font-weight-bold mb-4">
+            </small>
+            <img
+                    alt="Rounded image"
+                    class="img-fluid rounded shadow"
+                    src="assets/img/ryan.jpg"
+                    style="width: 150px;"
+            />
+
+        </div>
+    </div>
+
+    <div class="row" id="modals">
+        <div class="col-md-4">
+
+
+            <button
+                    class="btn btn-danger"
+                    data-target="#myModal"
+                    (click)="myModal.show()"
+            >
+                Standard
+            </button>
+        </div>
+
+        <div class="col-md-4">
+
+            <button
+                    class="btn btn-warning"
+                    data-target="#myModal1"
+                    (click)="myModal1.show()"
+            >
+                Premuim
+            </button>
+        </div>
+        <div class="col-md-4">
+
+            <button
+                    class="btn btn-success"
+                    data-target="#myModal2"
+                    (click)="myModal2.show()"
+            >
+                Business
+            </button>
+        </div>
+
+
+    </div>
+</div>
