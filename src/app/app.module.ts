@@ -31,7 +31,7 @@ import { LandingpageComponent } from "./pages/examples/landingpage/landingpage.c
     // IndexComponent,
     // ProfilepageComponent,
     // RegisterpageComponent,
-    // LandingpageComponent
+    // LandingpageComponent,
 
   ],
   imports: [

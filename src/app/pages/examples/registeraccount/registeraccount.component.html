@@ -1,46 +1,186 @@
-<div class="container row">
-    <div class="col-md-12">
-        <h1>Upload Image</h1>
-    </div>
-</div>
-<div class="row">
 
-</div>
-<div class="container row">
-    <div class="col-md-6">
-        <input type="file" (change)="onUpload($event)">
-    </div>
 
-</div>
+<app-headers> </app-headers>
+<div class="wrapper">
 
-<div class="container row">
-    <div class="col-md-6">
-        <input type="file" (change)="onUpload2($event)">
-    </div>
+    <div class="page-header">
+        <div class="page-header-image"></div>
+        <div class="content">
+            <div >
 
-</div>
-<div class="row">
-    <button (click)="submit()">Valider</button>
-</div>
-<hr />
-<div class="container row">
-    <div class="col-md-12">
-        <div *ngIf=message>{{message}}</div>
-    </div>
-</div>
-<div class="container row">
-    <div class="col-md-6">
-        <input type="text" class="form-control" id="name" placeholder="image name" [(ngModel)]="imageName"
-               name="name" />
-    </div>
-    <div class="col-md-6">
-        <input type="button" (click)="getImage()" value="Get Image">
-    </div>
-</div>
-<div class="container row">
-    <div class="col-md-12">
-        <div *ngIf=retrievedImage>
-            <img [src]="retrievedImage">
+
+                <h2 class="card-title"  class="form-check ">Ouvrir mon compte de paiement</h2>
+            </div>
+
+            <div class="container" >
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 offset-lg-0 offset-md-3">
+                        <div class="square square-7" id="square7"></div>
+                        <div class="square square-8" id="square8"></div>
+                        <div class="card card-register">
+
+                            <div class="card-body">
+                                <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
+
+                                    <div
+                                            class="input-group"
+                                            [ngClass]="{ 'input-group-focus': focus === true }"
+                                    >
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="tim-icons icon-single-02"> </i>
+                                            </div>
+                                        </div>
+                                        <input
+                                                class="form-control"
+                                                placeholder="N° Carte d'Identité Nationale"
+                                                type="text"
+                                                name = "cin"
+                                                (focus)="focus = true"
+                                                (blur)="focus = false"
+                                                ngModel
+                                        />
+                                    </div>
+                                    CIN Recto  :
+                                    <div class="container row">
+                                        <div class="col-md-6">
+                                            <input type="file" (change)="onUpload($event)">
+                                        </div>
+
+                                    </div>
+                                    CIN Verso  :
+                                    <div class="container row">
+                                        <div class="col-md-6">
+                                            <input type="file" (change)="onUpload2($event)">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-footer">
+                                        <button type="reset" class="btn btn-light btn-lg">Annuler</button>
+                                        <button type="submit"  (click)="submit()" class="btn btn-success btn-lg ms-2">Confirmer</button>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="register-bg"></div>
+                <div class="square square-1" id="square1"></div>
+                <div class="square square-2" id="square2"></div>
+                <div class="square square-3" id="square3"></div>
+                <div class="square square-4" id="square4"></div>
+                <div class="square square-5" id="square5"></div>
+                <div class="square square-6" id="square6"></div>
+            </div>
         </div>
     </div>
+
+    <div
+            aria-hidden="true"
+            aria-labelledby="myModalLabel"
+            bsModal
+            class="modal fade modal-mini modal-danger modal-mini"
+            #myModal1="bs-modal"
+            id="myModal1"
+            role="dialog"
+            tabindex="-1"
+    >
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-footer">
+                    <button class="btn btn-link btn-neutral" type="button">Back</button>
+                    <button
+                            class="btn btn-link btn-neutral"
+                            data-dismiss="modal"
+                            type="button"
+                            (click)="myModal1.hide()"
+                    >
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"><h1 class="title">BNA Cash</h1></div>
+                <div class="col-md-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['/home']"> Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['/register']"> Register </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://creative-tim.com/contact-us?ref=blkdsa-footer">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://creative-tim.com/about-us?ref=blkdsa-footer">
+                                About Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://creative-tim.com/blog?ref=blkdsa-footer">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://opensource.org/licenses/MIT">
+                                License
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3 class="title">Follow us:</h3>
+                    <div class="btn-wrapper profile">
+                        <a
+                                class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+                                href="https://twitter.com/creativetim"
+                                target="_blank"
+                        >
+                            <i class="fab fa-twitter"> </i>
+                        </a>
+                        <a
+                                class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+                                href="https://www.facebook.com/creativetim"
+                                target="_blank"
+                        >
+                            <i class="fab fa-facebook-square"> </i>
+                        </a>
+                        <a
+                                class="btn btn-icon btn-neutral btn-round btn-simple"
+                                href="https://dribbble.com/creativetim"
+                                target="_blank"
+                        >
+                            <i class="fab fa-dribbble"> </i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>

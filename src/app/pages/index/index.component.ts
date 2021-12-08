@@ -81,4 +81,19 @@ export class IndexComponent implements OnInit, OnDestroy {
     const body = document.getElementsByTagName('body')[0];
     body.classList.remove('index-page');
   }
+
+  goToStandardPage() {
+
+    this.router.navigate(['/standard']);
+  }
+
+  goToPremiumPage(){
+    this.router.navigate(['/premium']);
+
+  }
+
+  goToBusinessPage(){
+    this.router.navigate(['/business']);
+
+  }
 }

@@ -24,6 +24,9 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
 import { TestComponent } from './examples/test/test.component';
 import { HeadersComponent } from './examples/headers/headers.component';
 import { RegisteraccountComponent } from './examples/registeraccount/registeraccount.component';
+import { StandardpageComponent } from './examples/standardpage/standardpage.component';
+import { PremiumpageComponent } from './examples/premiumpage/premiumpage.component';
+import { BusinesspageComponent } from './examples/businesspage/businesspage.component';
 
 @NgModule({
   imports: [
@@ -51,13 +54,17 @@ import { RegisteraccountComponent } from './examples/registeraccount/registeracc
     LandingpageComponent,
     TestComponent,
     HeadersComponent,
-    RegisteraccountComponent
+    RegisteraccountComponent,
+    StandardpageComponent,
+    PremiumpageComponent,
+    BusinesspageComponent
   ],
   exports: [
     IndexComponent,
     ProfilepageComponent,
     RegisterpageComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    StandardpageComponent
   ],
   providers: []
 })
