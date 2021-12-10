@@ -17,6 +17,8 @@ import { BsDatepickerModule } from "ngx-bootstrap/datepicker";
 import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from "ngx-bootstrap/modal";
 
+
+
 import { PagesModule } from "./pages/pages.module";
 
 import { IndexComponent } from "./pages/index/index.component";

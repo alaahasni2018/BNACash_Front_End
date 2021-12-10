@@ -16,8 +16,9 @@ export class HeadersComponent implements OnInit {
 
     this.authService.login(data ).subscribe(
         // tslint:disable-next-line:no-shadowed-variable
-        data => {
+        (data:any) => {
           console.log(data);
+          localStorage.setItem("token", data.jwt);
           this.goToHomePage();
         });
 

@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   ) {}
   @HostListener("window:scroll", ["$event"])
   onWindowScroll(e) {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 0) {
       var element = document.getElementById("navbar-top");
       if (element) {
         element.classList.remove("navbar-transparent");
@@ -36,6 +36,6 @@ export class AppComponent implements OnInit {
     }
   }
   ngOnInit() {
-    this.onWindowScroll(event);
+   this.onWindowScroll(event);
   }
 }

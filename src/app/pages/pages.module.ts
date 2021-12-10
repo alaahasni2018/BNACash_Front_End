@@ -29,24 +29,25 @@ import { PremiumpageComponent } from './examples/premiumpage/premiumpage.compone
 import { BusinesspageComponent } from './examples/businesspage/businesspage.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    BrowserModule,
-    FormsModule,
-    RouterModule,
-    BsDropdownModule.forRoot(),
-    ProgressbarModule.forRoot(),
-    TooltipModule.forRoot(),
-    PopoverModule.forRoot(),
-    CollapseModule.forRoot(),
-    JwBootstrapSwitchNg2Module,
-    TabsModule.forRoot(),
-    PaginationModule.forRoot(),
-    AlertModule.forRoot(),
-    BsDatepickerModule.forRoot(),
-    CarouselModule.forRoot(),
-    ModalModule.forRoot()
-  ],
+    imports: [
+        CommonModule,
+        BrowserModule,
+        FormsModule,
+        RouterModule,
+        BsDropdownModule.forRoot(),
+        ProgressbarModule.forRoot(),
+        TooltipModule.forRoot(),
+        PopoverModule.forRoot(),
+        CollapseModule.forRoot(),
+        JwBootstrapSwitchNg2Module,
+        TabsModule.forRoot(),
+        PaginationModule.forRoot(),
+        AlertModule.forRoot(),
+        BsDatepickerModule.forRoot(),
+        CarouselModule.forRoot(),
+        ModalModule.forRoot(),
+
+    ],
   declarations: [
     IndexComponent,
     ProfilepageComponent,
